@@ -22,16 +22,23 @@ function newblock (types){
 		case "start":
 			if( $(".canvas .start").length != 0 ){
 
-				$(".workspace p").append("There is already a Start object");
+				$(".workspace p").append("There is already a Start object.<br>");
 
 			} else {
-				$(".canvas .box").append($("<p></p>").text(types).addClass("start"));
-				$(".workspace p").append("Object added");
+				$(".canvas .box").append($("<p></p>").text(types).addClass(types));
+				$(".workspace p").append("Object added.<br>");
 			}
+			break;
+
+		case "input":
+			$(".canvas .box").append($("<p></p>").text(types).addClass(types));
+			$(".workspace p").append("Object added.<br>");
+			break;
 	}
 }
 
 
 
 $ele.eq(0).click(function(){ newblock("start");});
+$ele.eq(1).click(function(){ newblock("input");});
 
