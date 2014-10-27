@@ -1,0 +1,37 @@
+#contenido .canvas{
+	width: 85%;
+}
+#contenido .canvas div{
+	background: rgba(0,250,0,.5);
+	
+	display: inline-block;
+	
+	vertical-align: top;
+
+}
+#contenido .canvas .box{
+	height: 500px;
+	overflow: hidden;
+	width: 50%;
+}
+
+#contenido .canvas,
+#contenido .slt{
+
+	
+	display: inline-block;
+}
+#contenido .slt{
+	background: rgba(255,0,0,.5);
+	width: 10%;
+	vertical-align: top;
+}
+#contenido .slt ul{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+#contenido .workspace{
+	background: rgba(0,0,0,.5);
+
+}
